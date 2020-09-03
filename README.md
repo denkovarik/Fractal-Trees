@@ -5,7 +5,7 @@ This program creates models of plant architecture and fractal geometery using Tu
 
 The bracketed L-system involves the use of strings whose characters represent instuctions of how to draw the structure. These strings consist of a starting an alphabet, a starting axiom, a delta, a length 'd', a set of production rules, and a time step 't'. The set of production rules are applied to the axiom to produce a new "word" according to the set of production rules. The "word" is rewritten 't' - 1 more times according to the production rules. The alphabet defines the characters that are used in the strings and the production rules. This produces a string which represents a set of instructions for how to draw the structure. Each instruction is represeted by a single character in the final "word". 
 
-In this project the alphabet used is as follows:
+The following alphabet was used for this project:
 * V = {F,G,\[,\],+,-}
 
 The commands represented by the above symbols are as follows:
