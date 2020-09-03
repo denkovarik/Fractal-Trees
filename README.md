@@ -29,19 +29,18 @@ This project was created as a result of taking the course CSC 449 "Fundamentals 
 
 
 ## Installation
-
+This project was developed and tested in Ubuntu on the terminal.
 
 ### Required Software
 * Python 3
+* Turtle Graphics
+* Python Imaging Library
    
 
 ### Optional Software for Windows Users running Windows Subsystem for Linux (Ubuntu)
 * Xming
    * X-server package for displaying platform on windows
-   * Note that if you get a error like "(Ant Clustering Simulation:34): 
-   Gtk-WARNING **: 21:14:58.430: cannot open display: " when trying to run the program, 
-   then make sure Xming is running and then try typing the following command into the 
-   shell: "export DISPLAY=:0.0".
+   * Note that if you get a error like "no display name and no $DISPLAY environment variable" when trying to run the program, then make sure Xming is running and then try typing the following command into the shell: "export DISPLAY=:0.0".
    
    
 ### Clone the repository
