@@ -1,6 +1,6 @@
 # Fractal-Trees
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/denkovarik/Fractal-Trees/blob/master/fractalTrees/defaultTree.png)
 
 ## Description
 This program creates models of plant architecture using Turtle Graphics and bracketed L-systems. A bracketed L-system is used to represent the graph-theoretic trees. It includes an algorithm for creating a large string of characters (called a "word") starting from a much smaller string (called the "axiom") and a set of production rules. The final "word" is then interpreted as seiries of commands (by a "little turtle") for drawing the structure. In this way, a computer can create fractal images of plant-like structures starting from a simiple set of rules.
