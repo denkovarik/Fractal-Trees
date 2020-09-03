@@ -59,7 +59,11 @@ This project was developed and tested in Ubuntu on the terminal.
   * git clone git@github.com:denkovarik/Fractal-Trees.git
   
 ## Usage
-* Run p
+* Run program with default values
+   * python3 fractalTree.py
+   
+### Run with Command Line Arguments
+Running the program with command line arguments will allow you to create different plant-like structures. The syntax for the command line arguments if very specific, and if your arguments do not meet this, then either the default values will be used, or the program may not work.
 
 ## References
 * DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
