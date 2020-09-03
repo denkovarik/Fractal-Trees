@@ -17,15 +17,7 @@ The commands represented by the above symbols are as follows:
 | \[ | Save the current state of the turtle for later use onto a stack of saved states. No line is drawn. |
 | \] | Remove the last saved state from the stack and use it to restore to turtle's last saved state. No line is draw. |
 
-The set of production rules used in this project are as follows:
-| Character | Rule |
-| --------------- | --------------- | 
-| F | G\[\-F\]G\[\+F\]F |
-| G | GG |
-| \[ | \[ |
-| \] | \] |
-
-For example, an L-system with an alphabet of V = {F,G,[,],+,-}, a 
+This project was created as a result of taking the course CSC 449 "Fundamentals of Natrual Computing" at the South Dakota School of Mines and Technology. The concepts used in this project were taken from the book _Fundamentals of Natural Computing_ written by Leandro Nunes de Castro_. For more information, please refer to this book.
 
 
 ## Installation
@@ -52,6 +44,9 @@ For example, an L-system with an alphabet of V = {F,G,[,],+,-}, a
   
 ## Usage
 * This command will start a set of example runs for demonstration
+
+## References
+* DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
 
 ## Credits
 * Dennis Kovarik
