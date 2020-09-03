@@ -19,7 +19,7 @@ The commands represented by the above symbols are as follows:
 
 The default set of production rules fo the bracketed L-system are as follows:
 | Character |
-| --------------- | --------------- | 
+| --------------- |
 | G -> F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
 | F -> FF |
 
