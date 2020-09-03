@@ -17,8 +17,16 @@ The commands represented by the above symbols are as follows:
 | \[ | Save the current state of the turtle for later use onto a stack of saved states. No line is drawn. |
 | \] | Remove the last saved state from the stack and use it to restore to turtle's last saved state. No line is draw. |
 
+The default values used in the project are given below:
+
 The default set of production rules fo the bracketed L-system are as follows:
-| Production Rules |
+| Variable | Value |
+| --------------- | --------------- |
+| t | 8 |
+| delta | 22.5 |
+| axiom | G |
+
+| Default Production Rules |
 | --------------- |
 | G -> F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
 | F -> FF |
