@@ -17,8 +17,16 @@ The commands represented by the above symbols are as follows:
 | \[ | Save the current state of the turtle for later use onto a stack of saved states. No line is drawn. |
 | \] | Remove the last saved state from the stack and use it to restore to turtle's last saved state. No line is draw. |
 
+The default values used in the project are given below:
+
 The default set of production rules fo the bracketed L-system are as follows:
-| Production Rules |
+| Variable | Value |
+| --------------- | --------------- |
+| t | 8 |
+| delta | 22.5 |
+| axiom | G |
+
+| Default Production Rules |
 | --------------- |
 | G -> F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
 | F -> FF |
@@ -51,7 +59,7 @@ This project was developed and tested in Ubuntu on the terminal.
   * git clone git@github.com:denkovarik/Fractal-Trees.git
   
 ## Usage
-* This command will start a set of example runs for demonstration
+* Run p
 
 ## References
 * DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
