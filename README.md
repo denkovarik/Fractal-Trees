@@ -17,6 +17,14 @@ The commands represented by the above symbols are as follows:
 | \[ | Save the current state of the turtle for later use onto a stack of saved states. No line is drawn. |
 | \] | Remove the last saved state from the stack and use it to restore to turtle's last saved state. No line is draw. |
 
+The set of production rules used in this project are as follows:
+| Character | Rule |
+| --------------- | --------------- | 
+| F | G\[\-F\]G\[\+F\]F |
+| G | GG |
+| \[ | \[ |
+| \] | \] |
+
 For example, an L-system with an alphabet of V = {F,G,[,],+,-}, a 
 
 
