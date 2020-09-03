@@ -9,11 +9,13 @@ In this project the alphabet used is as follows:
 * V = {F,G,\[,\],+,-}
 
 The commands represented by the above symbols are as follows:
-* F, G   Move forward a step of length 'd' while drawing a line.
-* \+      Turn right by andle delta
-* \-      Turn left by angle delta
-* \[     Save the current state of the turtle for later use onto a stack of saved states. No line is drawn.
-* \]     Remove the last saved state from the stack and use it to restore to turtle's last saved state. No line is draw..
+| Character | Instruction |
+| --------------- | --------------- | 
+| F, G | Move forward a step of length 'd' while drawing a line. |
+| \+ | Turn right by andle delta |
+| \- | Turn left by angle delta |
+| \[ | Save the current state of the turtle for later use onto a stack of saved states. No line is drawn. |
+| \] | Remove the last saved state from the stack and use it to restore to turtle's last saved state. No line is draw. |
 
 For example, an L-system with an alphabet of V = {F,G,[,],+,-}, a 
 
