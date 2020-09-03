@@ -59,7 +59,7 @@ This project was developed and tested in Ubuntu on the terminal.
   * git clone git@github.com:denkovarik/Fractal-Trees.git
   
 ## Usage
-* This command will start a set of example runs for demonstration
+* Run p
 
 ## References
 * DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
