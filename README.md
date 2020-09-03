@@ -67,6 +67,7 @@ Running the program with command line arguments will allow you to create differe
 | Order | Argument Name | Description | Example |
 | --------------- | --------------- | --------------- | --------------- |
 | 1 | Filename | The name of the file to save the newly created image as | newTree |
+| 2 | Animation | Specifies whether or not to animate the drawing of the structure. To turn animation off, put "no_animation" in place for this argument | no_animation |
 
 ## References
 * DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
