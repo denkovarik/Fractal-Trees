@@ -22,9 +22,10 @@ The default values used in the project are given below:
 The default set of production rules fo the bracketed L-system are as follows:
 | Variable | Value |
 | --------------- | --------------- |
-| t | 8 |
+| time step | 8 |
 | delta | 22.5 |
 | axiom | G |
+| distance | 1 |
 
 | Default Production Rules |
 | --------------- |
@@ -68,6 +69,12 @@ Running the program with command line arguments will allow you to create differe
 | --------------- | --------------- | --------------- | --------------- |
 | 1 | Filename | The name of the file to save the newly created image as | newTree |
 | 2 | Animation | Specifies whether or not to animate the drawing of the structure. To turn animation off, put "no_animation" in place for this argument | no_animation |
+| 3 | Time Step | Specifies the time step variable 't' for the bracketed L-system. This variable specifies how many times the "word" is rewritten. | 8 |
+| 4 | Distance | The distance of each step in drawing the structure | 1 |
+| axiom | G |
+| 5 | Delta | The angle for the turtle to turn when drawing the structure | 22.5 |
+| 6 | Axiom | The starting word for the bracketed L-system to start with | G |
+| 7 | Number of Production Rules | The number of production rules used in drawing the struction. Note that each production rule is expected to consist of 2 space seperated words | G F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
 
 ## References
 * DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
