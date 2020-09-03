@@ -25,16 +25,16 @@ def rewrite(word, P):
 
 	return newWord
 
-def go_turtle_go_turtle_go_turtle_go(word, d, gamma, turtleState):
+def go_turtle_go_turtle_go_turtle_go(word, d, delta, turtleState):
 	for i in range(len(word)):
 		if (word[i] == "G" or word[i] == "F"):
 			turtle.forward(d)
 		elif (word[i] == "+"):
-			turtle.right(gamma)
+			turtle.right(delta)
 		elif (word[i] == "-"):
-			turtle.left(gamma)
+			turtle.left(delta)
 		elif (word[i] == "["):
-			state = list(())		#(x,y,gamma)
+			state = list(())		#(x,y,delta)
 			state.append(turtle.position())
 			state.append(turtle.heading())
 			turtleState.append(state)
@@ -50,7 +50,7 @@ def go_turtle_go_turtle_go_turtle_go(word, d, gamma, turtleState):
 	return	turtleState
 
 t = 8
-gamma = 22.5
+delta = 22.5
 word = "G"
 gRule = "F+[[G]-G]-F[-FG]+G"
 fRule = "FF"
@@ -64,30 +64,38 @@ rule.append("F")
 rule.append(fRule)
 P.append(rule)
 turtleState = list(())
-filename = "den tree 3"
+filename = "defaultTree"
 d = 1
+animate = 'animate'
 
+# Read in the command line arguments
 if (len(sys.argv) > 5):
 	del rule
 	del P
 	P = list(())
-	filename = sys.argv[1]
-	t = int(sys.argv[2])
-	d = float(sys.argv[3])
-	gamma = float(sys.argv[4])
-	word = sys.argv[5]
-	numP = int(sys.argv[6])
-	index = 7
+	filename = sys.argv[1] 		# Read in filename from first argument 	
+	animate = sys.argv[2] 		# Read in animation
+	t = int(sys.argv[3])		# Read in value for t from the second argument
+	d = float(sys.argv[4])		# Read in the value for d from the second arg
+	delta = float(sys.argv[5])	# Read in value for delta	
+	word = sys.argv[6]		# Read in string for starting axiom
+	numP = int(sys.argv[7])		# Read in the number of production rules
+	index = 8
 	for i in range(numP):
 		rule = list(())
 		rule.append(sys.argv[index])
 		index = index + 1
 		rule.append(sys.argv[index])
 		index = index + 1
-		P.append(rule)
+		P.append(rule)	
 
 
-turtle.tracer(True)
+if (animate == 'no_animation'):
+	turtle.tracer(False)
+else:
+	turtle.tracer(True)
+turtle.tracer(False)
+	
 loadWindow = turtle.getscreen() 
 setUpTurtle()
 
@@ -95,13 +103,13 @@ for i in range(t):
 	word = rewrite(word, P)
 
 
-turtleState = go_turtle_go_turtle_go_turtle_go(word, d, gamma, turtleState)
+turtleState = go_turtle_go_turtle_go_turtle_go(word, d, delta, turtleState)
 
 filepath = "fractalTrees/" + filename
 
 loadWindow.getcanvas().postscript(file=(filepath+".ps"))
 
-#im = Image.open(filepath+".ps")
-#im.save(filepath+".png")
+im = Image.open(filepath+".ps")
+im.save(filepath+".png")
 
 turtle.exitonclick() 
