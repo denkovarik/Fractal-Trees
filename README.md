@@ -18,10 +18,10 @@ The commands represented by the above symbols are as follows:
 | \] | Remove the last saved state from the stack and use it to restore to turtle's last saved state. No line is draw. |
 
 The default set of production rules fo the bracketed L-system are as follows:
-| Character |
-| --------------- |
 | G -> F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
 | F -> FF |
+| \[ -> \[ |
+| \] -> \] |
 
 This project was created as a result of taking the course CSC 449 "Fundamentals of Natrual Computing" at the South Dakota School of Mines and Technology. The concepts used in this project were taken from the book _Fundamentals of Natural Computing_ written by Leandro Nunes de Castro. For more information, please refer to this book.
 
