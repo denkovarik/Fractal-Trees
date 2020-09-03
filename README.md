@@ -63,7 +63,10 @@ This project was developed and tested in Ubuntu on the terminal.
    * python3 fractalTree.py
    
 ### Run with Command Line Arguments
-Running the program with command line arguments will allow you to create different plant-like structures. The syntax for the command line arguments if very specific, and if your arguments do not meet this, then either the default values will be used, or the program may not work.
+Running the program with command line arguments will allow you to create different plant-like structures. The syntax for the command line arguments if very specific, and if your arguments do not meet this, then either the default values will be used, or the program may not work. For the program to work properly, the following arguments must be passed into the program in the following order.
+| Order | Argument Name | Description | Example |
+| --------------- | --------------- | --------------- | --------------- |
+| 1 | Filename | The name of the file to save the newly created image as | newTree |
 
 ## References
 * DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
