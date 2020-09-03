@@ -81,6 +81,9 @@ Running the program with command line arguments will allow you to create differe
 | . | . | . | . |
 | . | . | . | . |
 
+#### Example
+* python3 fractalTree.py test no_animation 8 1 22.5 G 2 G F+[[G]-G]-F[-FG]+G F FF
+
 
 ## References
 * DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
