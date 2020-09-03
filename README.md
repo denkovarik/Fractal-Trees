@@ -1,7 +1,7 @@
 # Fractal-Trees
 
 ## Description
-This program creates 
+This program creates models of plant architecture and fractal geometery. A bracketed L-system is used to represent the graph-theoretic trees as strings. By using simiple ruls represented by these bracketed L-systems, this program is able to create images of plant-like structures. 
 
 
 ## Installation
