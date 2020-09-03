@@ -1,9 +1,9 @@
 # Fractal-Trees
 
 ## Description
-This program creates models of plant architecture and fractal geometery using Turtle Graphics and bracketed L-systems. A bracketed L-system is used to represent the graph-theoretic trees. It includes an algorithm for creating a large string of characters (called the "word") starting from a much smaller string (called the "axiom") and a set of production rules. The final "word" is then interpreted as seiries of commands (by a "little turtle") for drawing the structure. In this way, a computer can create fractal images of plant-like structures starting from a simiple set of rules.
+This program creates models of plant architecture using Turtle Graphics and bracketed L-systems. A bracketed L-system is used to represent the graph-theoretic trees. It includes an algorithm for creating a large string of characters (called a "word") starting from a much smaller string (called the "axiom") and a set of production rules. The final "word" is then interpreted as seiries of commands (by a "little turtle") for drawing the structure. In this way, a computer can create fractal images of plant-like structures starting from a simiple set of rules.
 
-The bracketed L-system involves the use of strings whose characters represent instuctions of how to draw the structure. These strings consist of a starting an alphabet, a starting axiom, a delta, a length 'd', a set of production rules, and a time step 't'. The set of production rules are applied to the axiom to produce a new "word" according to the set of production rules. The "word" is rewritten 't' - 1 more times according to the production rules. The alphabet defines the characters that are used in the strings and the production rules. This produces a string which represents a set of instructions for how to draw the structure. Each instruction is represeted by a single character in the final "word". 
+The bracketed L-system involves the use of strings whose characters represent instuctions on how to draw the a certain structure. These strings consist of an alphabet, a starting axiom, a delta, a length 'd', a set of production rules, and a time step 't'. The set of production rules are applied to the axiom to produce a new "word" according to the set of production rules. This "word" is then rewritten 't' more times according to the production rules. The alphabet defines the characters used in the strings and the production rules. This produces a final string, which represents a set of instructions for how to draw the a structure. Each instruction is represeted as a single character in this final string or "word". 
 
 The following alphabet was used for this project:
 * V = {F,G,\[,\],+,-}
@@ -16,6 +16,12 @@ The commands represented by the above symbols are as follows:
 | \- | Turn left by angle delta |
 | \[ | Save the current state of the turtle for later use onto a stack of saved states. No line is drawn. |
 | \] | Remove the last saved state from the stack and use it to restore to turtle's last saved state. No line is draw. |
+
+The default set of production rules fo the bracketed L-system are as follows:
+| Character |
+| --------------- | --------------- | 
+| G -> F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
+| F -> FF |
 
 This project was created as a result of taking the course CSC 449 "Fundamentals of Natrual Computing" at the South Dakota School of Mines and Technology. The concepts used in this project were taken from the book _Fundamentals of Natural Computing_ written by Leandro Nunes de Castro. For more information, please refer to this book.
 
