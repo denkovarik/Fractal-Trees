@@ -74,7 +74,13 @@ Running the program with command line arguments will allow you to create differe
 | 5 | axiom | The starting word for the bracketed L-system algorithm to rewrite | G |
 | 6 | Delta | The angle for the turtle to turn when drawing the structure | 22.5 |
 | 7 | Axiom | The starting word for the bracketed L-system to start with | G |
-| 8 | Number of Production Rules | The number of production rules used in drawing the struction. Note that each production rule is expected to consist of 2 space seperated words | G F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
+| 8 | Number of Production Rules | The number of production rules used in drawing the struction. There can be a variable number of rules, and the rules can be given in any order. Note that each production rule is expected to consist of 2 space seperated words | G F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
+| 9 - 10 | Production Rule 1 | The first production rule to use. This consists of a Character to be rewritten followed by a space followed by a string specifying what the character in the new word will be rewritten to. | G F\+\[\[G\]\-G\]\-F\[\-FG\]\+G |
+| 11 - 12 | Production Rule 2 | The second production rule to use. This consists of a Character to be rewritten followed by a space followed by a string specifying what the character in the new word will be rewritten to. | G GG |
+| . | . | . | . |
+| . | . | . | . |
+| . | . | . | . |
+
 
 ## References
 * DE CASTRO, L., 2020. FUNDAMENTALS OF NATURAL COMPUTING. [S.l.]: CRC PRESS, pp.327-355.
