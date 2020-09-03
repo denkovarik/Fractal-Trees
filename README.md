@@ -40,14 +40,15 @@ This project was developed and tested in Ubuntu on the terminal.
 ### Optional Software for Windows Users running Windows Subsystem for Linux (Ubuntu)
 * Xming
    * X-server package for displaying platform on windows
-   * Note that if you get a error like "no display name and no $DISPLAY environment variable" when trying to run the program, then make sure Xming is running and then try typing the following command into the shell: "export DISPLAY=:0.0".
+   * Note that if you get a error like "no display name and no $DISPLAY environment variable" when trying to run the program, then make sure Xming is running and then try typing the following command into the shell: 
+      * "export DISPLAY=:0.0".
    
    
 ### Clone the repository
 * Clone with SSH
-  * git clone 
+  * git clone git@github.com:denkovarik/Fractal-Trees.git
 * Clone with HTTPS
-  * git clone 
+  * git clone git@github.com:denkovarik/Fractal-Trees.git
   
 ## Usage
 * This command will start a set of example runs for demonstration
