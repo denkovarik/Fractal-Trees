@@ -69,7 +69,7 @@ d = 1
 animate = 'animate'
 
 # Read in the command line arguments
-if (len(sys.argv) > 5):
+if (len(sys.argv) > 6):
 	del rule
 	del P
 	P = list(())
