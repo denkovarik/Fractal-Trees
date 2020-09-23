@@ -66,7 +66,7 @@ P.append(rule)
 turtleState = list(())
 filename = "defaultTree"
 d = 1
-animate = 'animate'
+animate = 'no_animation'
 
 # Read in the command line arguments
 if (len(sys.argv) > 6):
@@ -94,7 +94,7 @@ if (animate == 'no_animation'):
 	turtle.tracer(False)
 else:
 	turtle.tracer(True)
-turtle.tracer(False)
+turtle.tracer(True)
 	
 loadWindow = turtle.getscreen() 
 setUpTurtle()
@@ -110,6 +110,6 @@ filepath = "fractalTrees/" + filename
 loadWindow.getcanvas().postscript(file=(filepath+".ps"))
 
 im = Image.open(filepath+".ps")
-im.save(filepath+".png")
+#im.save(filepath+".png")
 
 turtle.exitonclick() 
